@@ -2131,6 +2131,7 @@ progress {
 
 .tr-contact span{
   font-size: 15px !important;
+  margin-bottom: -5px !important;
 }
 
 }
