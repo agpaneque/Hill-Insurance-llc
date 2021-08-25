@@ -601,6 +601,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+
 }
 
 .img-thumbnail {
@@ -2127,6 +2128,11 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+
+.tr-contact span{
+  font-size: 15px !important;
+}
+
 }
 @media (max-width: 767.98px) {
   .table-responsive-md {
@@ -2192,7 +2198,7 @@ progress {
   color: #212529;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 2px solid #1b4290;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -3255,12 +3261,12 @@ textarea.form-control-lg {
   border-color:  #ed1c24;
 }
 .btn-check:checked + .btn-dark:focus, .btn-check:active + .btn-dark:focus, .btn-dark:active:focus, .btn-dark.active:focus, .show > .btn-dark.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(2, 205, 202, 0.13);
 }
 .btn-dark:disabled, .btn-dark.disabled {
   color: #fff;
-  background-color: #212529;
-  border-color: #212529;
+  background-color: #ed1c24;
+  border-color: #ed1c24;
 }
 
 .btn-outline-primary {
@@ -11577,7 +11583,7 @@ header.masthead .masthead-heading {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 7px solid #ed1c24;
   border-radius: 100%;
   background-color: #1b4290;
 }
@@ -11696,7 +11702,7 @@ header.masthead .masthead-heading {
 .team-member img {
   width: 14rem;
   height: 14rem;
-  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  border: 0.5rem solid rgba(237,28,36);
 }
 .team-member h4, .team-member .h4 {
   margin-top: 1.5rem;
@@ -11708,10 +11714,12 @@ header.masthead .masthead-heading {
 }
 
 section#contact {
-  background-color: #212529;
+  background-color: #ced4da;
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+
 }
 section#contact .section-heading {
   color: #fff;
@@ -11774,9 +11782,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 
     text-align: left;
 	  display: inline-block;
-    background: rgb(1,0,0,0.3);
+    background: rgba(199, 12, 12, 0.5);
     border-radius: 50px;
-    padding: 20px;
+    padding: 10px;
     margin-top: 30px;
 }
 
@@ -11785,8 +11793,8 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin-block: 25px;
 }
 .tr-contact span{
-  font-size: 30px;
-    margin-bottom: -25px;
+  font-size: 25px;
+    margin-bottom: -20px;
     color: #1b4290;
 }
 .contact-element2 {
@@ -11795,6 +11803,13 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 
-.univista-color{
+.univista-color-rojo{
   color: #ed1c24 !important;
+}
+.univista-color-azul{
+  color: #1b4290 !important;  
+}
+.univista-stroke{  
+-webkit-text-fill-color: #1b4290;
+-webkit-text-stroke: 1px white;
 }
