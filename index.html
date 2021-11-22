@@ -53,7 +53,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase univista-color-azul">Hill Insurance LLC</h2>
-                    <h3 class="section-subheading text-muted univista-color-rojo">Si se cambia a Univista Insurance podrá ahorrar hasta el 40% de su póliza actual.</h3>
+                    <h3 class="section-subheading text-muted univista-color-rojo">Si se cambia a Univista Insurance podrá ahorrar <spam class="univista-color-azul"> hasta el 40%</spam> de su póliza actual.</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
@@ -286,7 +286,27 @@
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                              	
+<form
+  action="https://formspree.io/f/xgerjqgv"
+  method="POST"
+  id="form"
+>
+  <label>
+    Your email:
+    <input type="email" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+
+
+				 Contact  <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">

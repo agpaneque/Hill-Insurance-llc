@@ -7,7 +7,32 @@
 // Scripts
 // 
 
+const $form = document.querySelector('#form');
+
+$form.addEventListener('submit',handlessubmit);
+
+async function handlessubmit(event){
+    event.preventDefault();
+    const form = new FormData(this);
+
+   const response = await fetch(this.action,{
+        method : this.method,
+        body : form,
+        headers : {
+            'Accept':'application/json'
+        }  
+    });
+
+   if(response.ok){
+    this.reset();
+    alert("Muchas gracias lo contactaremos lo antes posible.");
+        }
+
+};
+
+
 window.addEventListener('DOMContentLoaded', event => {
+		
 
     // Navbar shrink function
     var navbarShrink = function () {
