@@ -7,7 +7,7 @@
 // Scripts
 // 
 
-const $form = document.querySelector('#form');
+const $form = document.querySelector('#contactForm');
 
 $form.addEventListener('submit',handlessubmit);
 

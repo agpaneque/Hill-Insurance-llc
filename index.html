@@ -56,6 +56,9 @@
                     <h3 class="section-subheading text-muted univista-color-rojo">Si se cambia a Univista Insurance podrá ahorrar <spam class="univista-color-azul"> hasta el 40%</spam> de su póliza actual.</h3>
                 </div>
                 <div class="row text-center">
+
+                	 <!-- Suscribirse
+
                     <div class="col-md-4">
 
                         <span class="fa-stack fa-4x">
@@ -67,6 +70,7 @@
                         <p class="text-muted">Encuentra tu mejor cobertura. Seleccione una empresa para comprar seguros en línea </p>
 							
                     </div>
+                    -->
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -77,6 +81,8 @@
 						<a href="tel:7867668802">
 							(786) 766-8802</a>
                     </div>
+
+                     <!--
 					<div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -85,6 +91,7 @@
                         <h4 class="my-3">Suscribirse</h4>
                         <p class="text-muted">A nuestras más recientes noticias y ofertas especiales que tenemos para ofrecerle.</p>
                     </div>
+                    -->
                 </div>
             </div>
         </section>
@@ -279,82 +286,49 @@
                     <h2 class="section-heading text-uppercase univista-color-azul">Contáctenos</h2>
                     <h3 class="section-subheading text-muted univista-color-azul">¡Solicite una cotización gratis y comience a <spam class="univista-color-rojo"> ahorrar hasta un 40% </spam> cuando cambia a UniVista Insurance!</h3>
                 </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                              	
-<form
-  action="https://formspree.io/f/xgerjqgv"
-  method="POST"
-  id="form"
->
-  <label>
-    Your email:
-    <input type="email" name="_replyto">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
 
-
-				 Contact  <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-
-                    <div class="row align-items-stretch mb-5">
+                 
+                 Contact
+ 				<form
+  					action="https://formspree.io/f/xgerjqgv"
+  					method="POST"
+  					id="contactForm"
+				>
+ 
+  					<div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <input class="form-control" name="name" id="name" type="text" placeholder="Your Name *" />
+                            
                             </div>
                             <div class="form-group">
                                 <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                <input class="form-control" name="_replyto" id="email" type="email" placeholder="Your Email *" required />
+                              
                             </div>
                             <div class="form-group mb-md-0">
                                 <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <input class="form-control" name="phone" id="phone" type="tel" placeholder="Your Phone *" 
+                                required />
+                                
                             </div>
                         </div>
                         
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
                                 <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                <textarea class="form-control" name="message" id="message" placeholder="Your Message *" ></textarea>
+                              
                             </div>
                         </div>
                     </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
-                </form>
+ 
+
+   					<div class="text-center">
+                    	<button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div>
+			</form>
+				
             </div>
 
 
@@ -439,23 +413,26 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase">Seguro de Vida</h2>
+                                    <p class="item-intro text-muted">Póliza de Seguro de Vida</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <p>Es difícil encontrar un seguro de vida asequible y de calidad en Florida y California. Es una de las razones por las que tanta gente aquí no tiene una póliza de seguro de vida o tal vez está atrapada en un plan que simplemente no satisface sus necesidades. Si descubriera que puede obtener el seguro adecuado en Florida o California sin las horas de esfuerzo, ¿estaría interesado?
+
+Podemos ayudarlo a comprender mejor los beneficios del seguro de vida y adaptar una póliza de seguro a sus necesidades según su presupuesto. Consulte nuestro sitio: use la información y obtenga una cotización de seguro en línea para tener una idea de qué tan grande es el beneficio por muerte que necesita y qué tipo de póliza de seguro de vida comprar.
+
+El seguro de vida a término es a menudo la cobertura más económica y la forma más sencilla de protección, ya que ofrece protección durante un número particular de años. Univista Insurance ofrece una diversidad de productos de seguro de vida a término asequibles para ajustar sus necesidades, plazos y presupuesto.
+
+El seguro de vida entera ofrece protección permanente con primas que nunca aumentan, la vida entera le permite mantener a su familia incluso cuando no puede estar allí para ellos. Las pólizas de seguro de vida entera también le brindan el potencial de recibir dividendos.</p>
+                                   
+                                    <h4 class="my-3 univista-color-azul">Cotización Gratis, Llame Ahora !!</h4>
+                      				<a href="tel:7867668802">
+										(786) 766-8802</a> 
+
+										<br>
+
+                                    <button class="btn btn-primary btn-xl text-uppercase mt-5" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
-                                        Close Project
+                                        Cerrar
                                     </button>
                                 </div>
                             </div>
@@ -474,23 +451,43 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase">Seguro de Auto</h2>
+                                    <p class="item-intro text-muted">Aseguranza de auto completa y personalizada.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <p>Univista Insurance le ofrece la forma más fácil para que pueda encontrar la cobertura más completa de seguro de auto que más se adecúa a sus necesidades y presupuesto.
+
+Podrá obtener ayuda personalizada de nuestros agentes expertos y encontrar una aseguranza de carro asequible y con calidad que se ajuste a usted y a sus finanzas. De esta manera, solo paga por lo que realmente necesita.</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Client:</strong>
-                                            Explore
+                                            <strong>Protección contra Lesiones Personales (PIP):</strong>
+                                            PIP cubre los gastos médicos por lesiones del asegurado y de las personas que viven en su misma casa, mayores de 15 años que estén listados en la póliza y los menores de 15 años. De acuerdo con la ley de la Florida, si usted es dueño de un vehículo de motor con cuatro o más ruedas, es obligatorio tener esta cobertura.
                                         </li>
+                                    </br>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
+                                            <strong>Lesiones Corporales:</strong>
+                                            Su mejor protección contra ser demandado por causar lesiones físicas a otra persona en un accidente automovilístico es tener la cobertura adecuada de Bodily Injury, o BI. BI paga a terceros, gastos médicos, salarios perdidos, dolor y sufrimiento si los lesiona en un accidente.
                                         </li>
+                                         </br>
+                                         <li>
+                                            <strong>Daños a la Propiedad:</strong>
+                                            El seguro paga, por los daños que usted o los miembros de su familia causan a la propiedad de otras personas mientras conduce. El término “propiedad” incluye, por ejemplo, una valla, un poste telefónico o un edificio, así como otro automóvil. La cobertura se aplica incluso si maneja el automóvil de otra persona.
+                                        </li>
+                                         </br>
+                                         <li>
+                                            <strong>Integral y Colisión:</strong>
+                                            Esta cobertura es la llamada “Full cover” que cubre el auto del asegurado. La cobertura de Collision le protege si su auto está dañado en un choque. Esto se cumple si el choque es con otro auto, un árbol, una pared, etc. La cobertura Comprehensive le cubre la pérdida de su auto ante cualquier causa.
+                                        </li>
+                                         </br>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+
+                                     <h4 class="my-3 univista-color-azul">Cotización Gratis, Llame Ahora !!</h4>
+                      				<a href="tel:7867668802">
+										(786) 766-8802</a> 
+
+										<br>
+                                     <button class="btn btn-primary btn-xl text-uppercase mt-5" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
-                                        Close Project
+                                        Cerrar
                                     </button>
                                 </div>
                             </div>
@@ -509,23 +506,54 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase">Seguro de Casa</h2>
+                                    <p class="item-intro text-muted">Coberturas de Seguro de Casa</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <p>Sabemos que eventos sin precedentes, como incendios, vandalismo, huracanes u otros eventos, pueden dañar su hogar, por eso le brindamos las mejores y más económicas opciones de costos para la protección de su hogar. Asegurar su hogar por su valor de reemplazo actual brinda una tranquilidad inestimable para usted y su familia.
+
+Cuando compra su seguro de casa, se recomienda que elija una agencia de seguros acreditada. Univista Insurance cuenta con agentes calificados y con licencia profesional que le ofrecerán la mejor cobertura que se adapte a sus necesidades y sus finanzas.</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Client:</strong>
-                                            Finish
+                                            <strong>HO3 (Póliza de seguro de hogar):</strong>
+                                            La HO3 (Póliza de seguro de hogar) es una forma amplia y la póliza de seguro de hogar más común que se vende en los Estados Unidos. Proporciona excelentes opciones de cobertura para su hogar, propiedad personal y protección de responsabilidad.
                                         </li>
+                                        <br>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Identity
+                                            <strong>HO6 (Póliza de seguro de condominio):</strong>
+                                            La HO6 (Póliza de seguro de condominio) es el tipo de póliza más común que se utiliza para asegurar casas adosadas y unidades de condominio en los Estados Unidos. Proporciona excelentes opciones de cobertura para las paredes interiores de su condominio o casa, propiedad personal y protección de responsabilidad civil.
                                         </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <br>
+                                        <li>
+                                            <strong>HO4 (Póliza de seguro para inquilinos):</strong>
+                                            La póliza de seguro HO4 (póliza de seguro para inquilinos) se conoce comúnmente como seguro para inquilinos. Ya sea que alquile una casa, un condominio, una casa adosada o un departamento de alquiler, el formulario de póliza HO4 ofrece excelentes opciones de cobertura para su propiedad personal y protección de responsabilidad civil.
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <strong>DP3 (Póliza de Seguro de Vivienda de Alquiler):</strong>
+                                           La póliza de seguro DP3 es una de las tres pólizas de seguro que se usan más comúnmente para propiedades de alquiler en los Estados Unidos. El DP3 es popular porque es una política de riesgo abierto y una política mucho más completa que un DP1 o DP2.
+                                        </li>
+                                        <br>
+                                         <li>
+                                            <strong>Seguro de Responsabilidad Civil en el Hogar:</strong>
+                                           Uno de los componentes más importantes de una póliza de seguro para propietarios de viviendas, condominios o inquilinos es la cobertura de responsabilidad personal. Esta cobertura brinda protección contra accidentes de los que usted es responsable y que ocurren dentro o fuera de su hogar y resultan en lesiones corporales o daños a la propiedad de otros.
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <strong>Seguro contra Inundaciones:</strong>
+                                           El seguro contra inundaciones cubre su hogar, otras viviendas, paredes interiores y exteriores, techos, muebles, ropa y electrodomésticos directamente dañados por el aumento del agua, el moho y los deslizamientos de tierra. La cobertura contra inundaciones no es un peligro cubierto por una póliza de propietario de vivienda y debe comprarse por separado bajo una Póliza de seguro contra inundaciones o agregarse a su póliza de propietario mediante endoso si está disponible.
+
+
+                                        </li>
+                                        <br>
+
+                                    </ul><h4 class="my-3 univista-color-azul">Cotización Gratis, Llame Ahora !!</h4>
+                      				<a href="tel:7867668802">
+										(786) 766-8802</a> 
+
+										<br>
+                                     <button class="btn btn-primary btn-xl text-uppercase mt-5" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
-                                        Close Project
+                                        Cerrar
                                     </button>
                                 </div>
                             </div>
@@ -544,23 +572,14 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase">Obamacare 2022</h2>
+                                    <p class="item-intro text-muted"></p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Lines
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Branding
-                                        </li>
-                                    </ul>
+                                    <p>El Seguro Obamacare es la única ley de protección y cuidado de la salud del paciente que existe actualmente en los Estados Unidos. El Período de Inscripción Abierta comienza el 1ro de Noviembre y termina el 15 de Enero. Una vez que califique, tendrá cobertura médica durante el año 2022.</p>
+                                    
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
-                                        Close Project
+                                        Cerrar
                                     </button>
                                 </div>
                             </div>
@@ -579,23 +598,31 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase">UniVista Insurance</h2>
+                                    <p class="item-intro text-muted">¡Solicite una cotización gratis y comience a ahorrar hasta un 40% cuando cambia a UniVista Insurance!</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <p></p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Client:</strong>
-                                            Southwest
+                                            <strong>Seguro de Auto</strong>
+                                            
                                         </li>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Website Design
+                                            <strong>Seguro de Propiedad</strong>
+                                           
+                                        </li>
+                                        <li>
+                                            <strong>Seguro Comercial</strong>
+                                           
+                                        </li>
+                                        <li>
+                                            <strong>Seguro de Salud</strong>
+                                           
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
-                                        Close Project
+                                        Cerrar
                                     </button>
                                 </div>
                             </div>
@@ -616,7 +643,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Project Name</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
                                         <li>
@@ -643,10 +670,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+      
     </body>
 </html>
